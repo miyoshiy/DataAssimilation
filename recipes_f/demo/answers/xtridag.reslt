@@ -1,0 +1,32 @@
+ The solution vector is:
+    -0.200000    0.600000    0.400000
+ (matrix)*(sol'n vector) should be:
+     1.000000    2.000000    3.000000
+ Actual result is:
+     1.000000    2.000000    3.000000
+ ***********************************
+ Press RETURN for next problem:
+ The solution vector is:
+     0.875862    0.124138    0.062069    0.855172    0.724138
+ (matrix)*(sol'n vector) should be:
+     1.000000    2.000000    3.000000    4.000000    5.000000
+ Actual result is:
+     1.000000    2.000000    3.000000    4.000000    4.999999
+ ***********************************
+ Press RETURN for next problem:
+ The solution vector is:
+     0.063830    0.468085   -0.021277   -0.085106    0.285106
+ (matrix)*(sol'n vector) should be:
+     1.000000    1.000000    1.000000    1.000000    1.000000
+ Actual result is:
+     1.000000    1.000000    1.000000    1.000000    1.000000
+ ***********************************
+ Press RETURN for next problem:
+ The solution vector is:
+    -0.483860    1.115573   -1.734864   -1.235842    5.816833   -7.064689
+ (matrix)*(sol'n vector) should be:
+     2.000000    7.500000    0.600000    7.400000    9.800000    8.800000
+ Actual result is:
+     2.000000    7.500000    0.600001    7.400000    9.800000    8.800003
+ ***********************************
+ Press RETURN for next problem:

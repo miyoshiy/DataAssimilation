@@ -1,0 +1,10 @@
+
+ Pair correlations of RAN0 ... RAN4
+
+  Program      Kendall Tau       Std. Dev.       Probability
+
+   RAN0        -0.010452        -0.219801         0.826026
+   RAN1        -0.023719        -0.498780         0.617934
+   RAN2         0.130251         2.739064         0.006161
+   RAN3        -0.062814        -1.320922         0.186527
+   RAN4         0.023015         0.483986         0.628396

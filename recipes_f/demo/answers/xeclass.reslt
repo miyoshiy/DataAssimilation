@@ -1,0 +1,8 @@
+
+ Numbers from 1-15 divided according to
+ their value modulo 4:
+
+ Class 1:     1  5  9 13
+ Class 2:     2  6 10 14
+ Class 3:     3  7 11 15
+ Class 4:     4  8 12

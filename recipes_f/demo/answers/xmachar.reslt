@@ -1,0 +1,13 @@
+ ibeta=           2
+ it=          24
+ irnd=           5
+ ngrd=           0
+ machep=         -23
+ negep=         -24
+ iexp=           8
+ minexp=        -126
+ maxexp=         128
+ eps=  1.1920929E-07
+ epsneg=  5.9604645E-08
+ xmin=  1.1754944E-38
+ xmax=  3.4028235E+38

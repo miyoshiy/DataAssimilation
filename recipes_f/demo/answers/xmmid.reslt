@@ -1,0 +1,82 @@
+ First four Bessel functions
+
+ X = 1.0000 to 1.5000 in  5 steps
+    Integration    BESSJ
+     0.511557    0.511828
+     0.557758    0.557936
+     0.232423    0.232088
+     0.061172    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 10 steps
+    Integration    BESSJ
+     0.511760    0.511828
+     0.557891    0.557936
+     0.232170    0.232088
+     0.061019    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 15 steps
+    Integration    BESSJ
+     0.511798    0.511828
+     0.557916    0.557936
+     0.232124    0.232088
+     0.060988    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 20 steps
+    Integration    BESSJ
+     0.511811    0.511828
+     0.557925    0.557936
+     0.232108    0.232088
+     0.060978    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 25 steps
+    Integration    BESSJ
+     0.511817    0.511828
+     0.557929    0.557936
+     0.232101    0.232088
+     0.060973    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 30 steps
+    Integration    BESSJ
+     0.511820    0.511828
+     0.557931    0.557936
+     0.232097    0.232088
+     0.060970    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 35 steps
+    Integration    BESSJ
+     0.511822    0.511828
+     0.557933    0.557936
+     0.232094    0.232088
+     0.060968    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 40 steps
+    Integration    BESSJ
+     0.511823    0.511828
+     0.557934    0.557936
+     0.232093    0.232088
+     0.060967    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 45 steps
+    Integration    BESSJ
+     0.511824    0.511828
+     0.557934    0.557936
+     0.232092    0.232088
+     0.060967    0.060964
+
+ press RETURN to continue...
+ X = 1.0000 to 1.5000 in 50 steps
+    Integration    BESSJ
+     0.511825    0.511828
+     0.557935    0.557936
+     0.232091    0.232088
+     0.060966    0.060964
+
+ press RETURN to continue...

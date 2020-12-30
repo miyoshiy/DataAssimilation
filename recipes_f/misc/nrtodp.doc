@@ -1,0 +1,68 @@
+                         About Double Precision 
+
+     Many Numerical Recipes readers have requested that the Numerical
+     Recipes routines be made available in DOUBLE PRECISION, in
+     addition to the default REAL. Doing so is not as simple as one might
+     think, because of the distinction between "roundoff error" and
+     "truncation error" (Please see the main book if you are not familiar
+     with these concepts.).  While mechanically converting all REAL's to
+     DOUBLE PRECISION's reduces a routine's roundoff error, it does not
+     reduce any truncation error that may be intrinsic to the algorithm.
+     Sometimes, a routine contains "accuracy parameters" which can be
+     adjusted to reduce the truncation error to the new, desired level.
+     Occasionally, however, the truncation error cannot be so easily
+     reduced; then, a whole new algorithm is needed.  Clearly such new
+     algorithms are beyond the scope of a simple "conversion".
+
+     If, despite the above cautions, you want to proceed with converting
+     some routines to DOUBLE PRECISION, you can use an automated conversion
+     tool that is included in this distribution, in the "misc" subdirectory.
+
+     There are two main files, nrtodp.c and nrtodp.dat.  You should compile
+     the program nrtodp from nrtodp.c and install it (see the help 
+     document nrtodp.compile). Then copy the file nrtodp.dat to your local
+     library directory, preferably the same one that contains the other
+     Numerical Recipes library files.  For a quick start with nrtodp,
+     simply type nrtodp (with no arguments) at any Unix prompt.
+     Instructions will be displayed.  Here are further details:
+
+     The syntax of the nrtodp command is
+         nrtodp path/ file [file...]
+     The action of the command is to perform a pro-forma conversion of
+     Numerical Recipes FORTRAN files to DOUBLE PRECISION.  Note that this
+     routine works only on Numerical Recipes routines (Recipes and
+     Example programs), not on general FORTRAN programs, because it assumes
+     certain typographical and stylistic conventions that the Numerical
+     Recipes routines strictly follow.
+
+     The first argument following nrtodp is a path string that is used
+     literally as the start of the output file name.  It should end with
+     the character "/".
+
+     The second and following arguments are input file names.  They must
+     correspond to files in the current (working) directory.  Output
+     file names are the same as input file names, but with a prepended
+     character "d".
+
+     Example:
+          nrtodp /nr/double/ lubksb.f
+     creates an output file /nr/double/dlubksb.f.  The subdirectory
+     /nr/double/ must already exist.  For output to the current directory,
+     use ./ for path.
+
+     The data file nrtodp.dat must be present either in the library
+     directory specified when compiling nrtodp, or the current directory.
+     A copy in the current directory will override one in the library
+     directory.
+
+     You might wish to examine the file nrtodp.dat with a text editor.
+     That file begins with comment lines that list the automatic
+     substitutions made by the nrtodp program.  The rest of the file
+     is a list of known exceptions and special cases, organized by Numerical
+     Recipes routine name.  These special cases adjust the routines'
+     accuracy parameters, when it is possible to do so.  If you want
+     to make different substitutions, or if you discover errors in the
+     conversions, you can edit the nrtodp.dat file yourself.  We would
+     be grateful to hear from you regarding your corrections.
+
+     NOTE: nrtodp is an UNSUPPORTED product, provided for your convenience.

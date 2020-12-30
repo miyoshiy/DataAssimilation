@@ -1,0 +1,163 @@
+
+ T =  0.5000000     Path Length =   5.097441    
+ Successful Moves:          100
+
+ T =  0.4500000     Path Length =   4.460600    
+ Successful Moves:          100
+
+ T =  0.4050000     Path Length =   3.259126    
+ Successful Moves:          100
+
+ T =  0.3645000     Path Length =   3.742049    
+ Successful Moves:          100
+
+ T =  0.3280500     Path Length =   3.292874    
+ Successful Moves:          100
+
+ T =  0.2952450     Path Length =   3.710830    
+ Successful Moves:          100
+
+ T =  0.2657205     Path Length =   3.866000    
+ Successful Moves:          100
+
+ T =  0.2391484     Path Length =   3.643127    
+ Successful Moves:          100
+
+ T =  0.2152336     Path Length =   3.329450    
+ Successful Moves:          100
+
+ T =  0.1937102     Path Length =   3.567175    
+ Successful Moves:          100
+
+ T =  0.1743392     Path Length =   3.447662    
+ Successful Moves:          100
+
+ T =  0.1569052     Path Length =   3.242678    
+ Successful Moves:          100
+
+ T =  0.1412147     Path Length =   3.513717    
+ Successful Moves:          100
+
+ T =  0.1270932     Path Length =   3.475056    
+ Successful Moves:          100
+
+ T =  0.1143839     Path Length =   3.105269    
+ Successful Moves:          100
+
+ T =  0.1029455     Path Length =   3.104847    
+ Successful Moves:          100
+
+ T =  9.2650965E-02 Path Length =   2.872385    
+ Successful Moves:           77
+
+ T =  8.3385870E-02 Path Length =   2.764179    
+ Successful Moves:           85
+
+ T =  7.5047284E-02 Path Length =   2.764179    
+ Successful Moves:           78
+
+ T =  6.7542553E-02 Path Length =   2.812146    
+ Successful Moves:           52
+
+ T =  6.0788296E-02 Path Length =   2.764177    
+ Successful Moves:           49
+
+ T =  5.4709464E-02 Path Length =   2.764175    
+ Successful Moves:           54
+
+ T =  4.9238518E-02 Path Length =   2.776711    
+ Successful Moves:           55
+
+ T =  4.4314664E-02 Path Length =   2.919468    
+ Successful Moves:           36
+
+ T =  3.9883196E-02 Path Length =   2.776710    
+ Successful Moves:           36
+
+ T =  3.5894874E-02 Path Length =   2.776709    
+ Successful Moves:           36
+
+ T =  3.2305386E-02 Path Length =   2.764172    
+ Successful Moves:           37
+
+ T =  2.9074846E-02 Path Length =   2.764172    
+ Successful Moves:           26
+
+ T =  2.6167361E-02 Path Length =   2.776707    
+ Successful Moves:           29
+
+ T =  2.3550624E-02 Path Length =   2.932000    
+ Successful Moves:           37
+
+ T =  2.1195561E-02 Path Length =   2.812138    
+ Successful Moves:           22
+
+ T =  1.9076005E-02 Path Length =   2.812137    
+ Successful Moves:           18
+
+ T =  1.7168405E-02 Path Length =   2.764168    
+ Successful Moves:           14
+
+ T =  1.5451564E-02 Path Length =   2.764168    
+ Successful Moves:           18
+
+ T =  1.3906407E-02 Path Length =   2.764168    
+ Successful Moves:           14
+
+ T =  1.2515767E-02 Path Length =   2.764166    
+ Successful Moves:           12
+
+ T =  1.1264189E-02 Path Length =   2.764166    
+ Successful Moves:           12
+
+ T =  1.0137770E-02 Path Length =   2.764166    
+ Successful Moves:           12
+
+ T =  9.1239931E-03 Path Length =   2.764165    
+ Successful Moves:           10
+
+ T =  8.2115931E-03 Path Length =   2.764165    
+ Successful Moves:            8
+
+ T =  7.3904335E-03 Path Length =   2.764164    
+ Successful Moves:            8
+
+ T =  6.6513899E-03 Path Length =   2.764164    
+ Successful Moves:            6
+
+ T =  5.9862509E-03 Path Length =   2.764163    
+ Successful Moves:            6
+
+ T =  5.3876257E-03 Path Length =   2.764163    
+ Successful Moves:            2
+
+ T =  4.8488630E-03 Path Length =   2.764163    
+ Successful Moves:            8
+
+ T =  4.3639764E-03 Path Length =   2.764163    
+ Successful Moves:            2
+
+ T =  3.9275787E-03 Path Length =   2.764163    
+ Successful Moves:            2
+
+ T =  3.5348206E-03 Path Length =   2.764163    
+ Successful Moves:            2
+
+ T =  3.1813385E-03 Path Length =   2.764163    
+ Successful Moves:            4
+
+ T =  2.8632046E-03 Path Length =   2.764163    
+ Successful Moves:            0
+ *** System Frozen ***
+ Final path:
+  city      x         y
+    2    0.5439    0.5391
+    7    0.4685    0.8234
+    1    0.3716    0.8473
+    9    0.1553    0.9795
+    8    0.1299    0.9753
+    6    0.0212    0.7429
+   10    0.0752    0.6946
+    3    0.3659    0.0130
+    5    0.8640    0.4355
+    4    0.8785    0.4521

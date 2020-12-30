@@ -1,0 +1,9 @@
+
+ Solution vector for the equations:
+     0.200000    0.200000    2.200000   -1.800000    0.200000
+
+ Solution vector with noise added:
+     0.218795    0.216818    2.471052   -2.108161    0.210452
+
+ Solution vector recovered by MPROVE:
+     0.200000    0.200000    2.200000   -1.800000    0.200000

@@ -1,0 +1,66 @@
+
+ Iteration # 1   Chi-squared:17732.0742   ALAMDA: 0.10E-03
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.7152  1.9326  3.0161  2.1725  4.8002  3.0640
+
+ Iteration # 2   Chi-squared:  187.4884   ALAMDA: 0.10E-04
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.8586  1.9395  2.9606  2.1701  4.8807  3.0340
+
+ Iteration # 3   Chi-squared:  182.8589   ALAMDA: 0.10E-05
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   5.0040  1.9982  3.0010  1.9994  4.9983  3.0006
+
+ Iteration # 4   Chi-squared:  107.9045   ALAMDA: 0.10E-06
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   5.0390  2.0155  3.0123  1.9509  5.0354  2.9904
+
+ Iteration # 5   Chi-squared:  107.1711   ALAMDA: 0.10E-07
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   5.0393  2.0159  3.0126  1.9500  5.0362  2.9902
+
+ Iteration # 6   Chi-squared:  107.1711   ALAMDA: 0.10E-06
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   5.0393  2.0159  3.0126  1.9500  5.0362  2.9902
+
+ Iteration # 7   Chi-squared:  107.1711   ALAMDA: 0.10E-05
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   5.0393  2.0159  3.0126  1.9500  5.0362  2.9902
+
+ Iteration # 8   Chi-squared:  107.1711   ALAMDA: 0.10E-04
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   5.0393  2.0159  3.0126  1.9500  5.0362  2.9902
+ Uncertainties:
+   0.0285  0.0125  0.0083  0.0358  0.0264  0.0075
+
+ Expected results:
+    5.00    2.00    3.00    2.00    5.00    3.00
+
+ press return to continue with constraint
+ Holding a(2) and a(5) constant
+
+ Iteration # 1   Chi-squared: 1799.1072   ALAMDA: 0.10E-03
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.9957  2.0000  3.0086  1.9931  5.0000  3.0086
+
+ Iteration # 2   Chi-squared:  110.7158   ALAMDA: 0.10E-04
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.9999  2.0000  3.0030  1.9965  5.0000  3.0011
+
+ Iteration # 3   Chi-squared:  110.7110   ALAMDA: 0.10E-05
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.9999  2.0000  3.0029  1.9965  5.0000  3.0011
+
+ Iteration # 4   Chi-squared:  110.7110   ALAMDA: 0.10E-04
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.9999  2.0000  3.0029  1.9965  5.0000  3.0011
+
+ Iteration # 5   Chi-squared:  110.7110   ALAMDA: 0.10E-03
+    A(1)    A(2)    A(3)    A(4)    A(5)    A(6)
+   4.9999  2.0000  3.0029  1.9965  5.0000  3.0011
+ Uncertainties:
+   0.0010  0.0000  0.0018  0.0019  0.0000  0.0005
+
+ Expected results:
+    5.00    2.00    3.00    2.00    5.00    3.00
+

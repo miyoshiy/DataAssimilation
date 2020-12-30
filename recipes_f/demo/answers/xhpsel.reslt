@@ -1,0 +1,17 @@
+ enter K
+ heap(1),check=   99.83000       99.83000    
+ heap of numbers of size           1
+           1   99.83000    
+ enter K
+ heap(1),check=   99.34000       99.34000    
+ heap of numbers of size           2
+           1   99.34000    
+           2   99.83000    
+ enter K
+ heap(1),check=   98.40000       98.40000    
+ heap of numbers of size           3
+           1   98.40000    
+           2   99.83000    
+           3   99.34000    
+ enter K
+ NORMAL COMPLETION

@@ -1,0 +1,13 @@
+ Enter T between 0 and PI/2
+ T, Calculated answer, True answer
+  0.100000  0.316236  0.316228
+ Enter T between 0 and PI/2
+ T, Calculated answer, True answer
+  0.500000  0.707133  0.707107
+ Enter T between 0 and PI/2
+ T, Calculated answer, True answer
+  1.000000  1.000044  1.000000
+ Enter T between 0 and PI/2
+ T, Calculated answer, True answer
+  1.500000  1.224804  1.224745
+ Enter T between 0 and PI/2

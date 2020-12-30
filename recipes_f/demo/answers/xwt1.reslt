@@ -1,0 +1,31 @@
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=           4         512          87
+ discrepancy=  4.7683716E-07
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=           4         512          52
+ discrepancy=  9.4080344E-04
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=           4         512          26
+ discrepancy=  2.1859594E-02
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=           4         512          87
+ discrepancy=  4.7683716E-07
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=           4         512          52
+ discrepancy=  9.4080344E-04
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=           4         512          26
+ discrepancy=  2.1859594E-02
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=          12         512          52
+ discrepancy=  3.2668223E-03
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=          12         512          26
+ discrepancy=  5.5626929E-02
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=          20         512          52
+ discrepancy=  7.4399207E-03
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):
+ k,NMAX,nused=          20         512          26
+ discrepancy=  6.6750348E-02
+ Enter k (4, -4, 12, or 20) and frac (0. to 1.):

@@ -1,0 +1,264 @@
+For your convenience, here's a list of the specific recipes needed for
+each demonstration program:
+
+badluk.f: flmoon.f julday.f
+fredex.f: quadmx.f kermom.f wwghts.f lubksb.f ludcmp.f
+sfroid.f: solvde.f plgndr.f bksub.f difeq.f pinvs.f red.f
+sphoot.f: shoot.f odeint.f rkqs.f rkck.f newt.f fdjac.f fmin.f lnsrch.f lubksb.f ludcmp.f
+xairy.f: airy.f bessik.f bessjy.f beschb.f chebev.f
+xamebsa.f: amebsa.f amotsa.f ran1.f
+xamoeba.f: amoeba.f amotry.f bessj0.f
+xanneal.f: anneal.f revcst.f revers.f trncst.f trnspt.f metrop.f irbit1.f ran3.f
+xarcode.f: arcode.f arcmak.f arcsum.f
+xavevar.f: avevar.f gasdev.f ran1.f
+xbalanc.f: balanc.f
+xbandec.f: banbks.f bandec.f banmul.f ran1.f
+xbanmul.f: banmul.f
+xbcucof.f: bcucof.f
+xbcuint.f: bcuint.f bcucof.f
+xbeschb.f: beschb.f chebev.f gammln.f
+xbessi.f: bessi.f bessi0.f
+xbessi0.f: bessi0.f
+xbessi1.f: bessi1.f
+xbessik.f: bessik.f beschb.f chebev.f
+xbessj.f: bessj.f bessj0.f bessj1.f
+xbessj0.f: bessj0.f
+xbessj1.f: bessj1.f
+xbessjy.f: bessjy.f beschb.f chebev.f
+xbessk.f: bessk.f bessi0.f bessi1.f bessk0.f bessk1.f
+xbessk0.f: bessk0.f bessi0.f
+xbessk1.f: bessk1.f bessi1.f
+xbessy.f: bessy.f bessy1.f bessy0.f bessj1.f bessj0.f
+xbessy0.f: bessy0.f bessj0.f
+xbessy1.f: bessy1.f bessj1.f
+xbeta.f: beta.f gammln.f
+xbetai.f: betai.f betacf.f gammln.f
+xbico.f: bico.f factln.f gammln.f
+xbnldev.f: bnldev.f ran1.f gammln.f
+xbrent.f: brent.f mnbrak.f bessj0.f bessj1.f
+xbroydn.f: broydn.f lnsrch.f qrdcmp.f qrupdt.f rotate.f rsolv.f fdjac.f fmin.f
+xbsstep.f: bsstep.f odeint.f mmid.f pzextr.f bessj0.f bessj1.f bessj.f
+xcaldat.f: caldat.f julday.f
+xchder.f: chder.f chebft.f chebev.f
+xchebev.f: chebev.f chebft.f
+xchebft.f: chebft.f
+xchebpc.f: chebpc.f chebft.f
+xchint.f: chint.f chebft.f chebev.f
+xcholsl.f: choldc.f cholsl.f
+xchsone.f: chsone.f expdev.f gammq.f gcf.f gser.f ran1.f gammln.f
+xchstwo.f: chstwo.f expdev.f gammq.f gcf.f gser.f ran1.f gammln.f
+xcisi.f: cisi.f
+xcntab1.f: cntab1.f gammq.f gcf.f gser.f gammln.f
+xcntab2.f: cntab2.f
+xconvlv.f: convlv.f twofft.f realft.f four1.f
+xcorrel.f: correl.f twofft.f realft.f four1.f
+xcosft1.f: cosft1.f realft.f four1.f
+xcosft2.f: cosft2.f realft.f four1.f
+xcovsrt.f: covsrt.f
+xcrank.f: crank.f sort2.f
+xcyclic.f: cyclic.f tridag.f lubksb.f ludcmp.f ran2.f
+xdawson.f: dawson.f
+xdbrent.f: dbrent.f mnbrak.f bessj0.f bessj1.f
+xddpoly.f: ddpoly.f factrl.f gammln.f
+xdecchk.f: decchk.f
+xdf1dim.f: df1dim.f scrsho.f
+xdfpmin.f: dfpmin.f lnsrch.f
+xdfridr.f: dfridr.f
+xdftint.f: dftint.f dftcor.f polint.f realft.f four1.f
+xeclass.f: eclass.f
+xeclazz.f: eclazz.f
+xei.f: ei.f
+xeigsrt.f: eigsrt.f jacobi.f
+xelle.f: elle.f rf.f rd.f
+xellf.f: ellf.f rf.f
+xellpi.f: ellpi.f rf.f rj.f rc.f
+xelmhes.f: elmhes.f balanc.f
+xerf.f: erf.f gammp.f gser.f gcf.f gammln.f
+xerfc.f: erfc.f gammp.f gammq.f gser.f gcf.f gammln.f
+xerfcc.f: erfcc.f
+xeulsum.f: eulsum.f
+xevlmem.f: evlmem.f memcof.f
+xexpdev.f: expdev.f ran1.f
+xexpint.f: expint.f
+xf1dim.f: f1dim.f scrsho.f
+xfactln.f: factln.f gammln.f
+xfactrl.f: factrl.f gammln.f
+xfasper.f: fasper.f spread.f realft.f four1.f avevar.f gasdev.f ran1.f
+xfgauss.f: fgauss.f
+xfit.f: fit.f gammq.f gammln.f gcf.f gser.f gasdev.f ran1.f
+xfitexy.f: fitexy.f chixy.f fit.f brent.f zbrent.f gammq.f gammln.f gcf.f gser.f mnbrak.f avevar.f gasdev.f ran1.f
+xfixrts.f: fixrts.f zroots.f laguer.f
+xfleg.f: fleg.f plgndr.f
+xflmoon.f: flmoon.f caldat.f julday.f
+xfour1.f: four1.f
+xfourfs.f: fourfs.f fourew.f fourn.f ran1.f
+xfourn.f: fourn.f ran1.f
+xfpoly.f: fpoly.f
+xfred2.f: fred2.f gauleg.f lubksb.f ludcmp.f
+xfredin.f: fredin.f fred2.f gauleg.f lubksb.f ludcmp.f
+xfrenel.f: frenel.f
+xfrprmn.f: frprmn.f linmin.f mnbrak.f brent.f f1dim.f bessj0.f bessj1.f
+xftest.f: ftest.f avevar.f betai.f gasdev.f betacf.f gammln.f ran1.f
+xgamdev.f: gamdev.f ran1.f
+xgammln.f: gammln.f
+xgammp.f: gammp.f gser.f gcf.f gammln.f
+xgammq.f: gammq.f gser.f gcf.f gammln.f
+xgasdev.f: gasdev.f ran1.f
+xgaucof.f: gaucof.f tqli.f pythag.f eigsrt.f
+xgauher.f: gauher.f
+xgaujac.f: gaujac.f gammln.f ellf.f rf.f
+xgaulag.f: gaulag.f gammln.f bessj0.f
+xgauleg.f: gauleg.f
+xgaussj.f: gaussj.f
+xgcf.f: gcf.f gammln.f
+xgolden.f: golden.f mnbrak.f bessj0.f bessj1.f
+xgser.f: gser.f gammln.f
+xhpsel.f: hpsel.f select.f sort.f
+xhpsort.f: hpsort.f
+xhqr.f: hqr.f elmhes.f balanc.f
+xhuffman.f: hufmak.f hufapp.f hufenc.f hufdec.f
+xhunt.f: hunt.f
+xhypgeo.f: hypgeo.f hypdrv.f hypser.f odeint.f bsstep.f mmid.f pzextr.f
+xicrc.f: icrc.f icrc1.f
+xigray.f: igray.f
+xindexx.f: indexx.f
+xirbit1.f: irbit1.f
+xirbit2.f: irbit2.f
+xjacobi.f: jacobi.f
+xjulday.f: julday.f
+xkendl1.f: kendl1.f erfcc.f ran0.f ran1.f ran2.f ran3.f ran4.f psdes.f
+xkendl2.f: kendl2.f irbit1.f irbit2.f erfcc.f
+xks2d1s.f: ks2d1s.f quadct.f quadvl.f pearsn.f probks.f shell.f betai.f betacf.f gammln.f ran1.f
+xks2d2s.f: ks2d2s.f quadct.f pearsn.f probks.f betai.f betacf.f gammln.f gasdev.f ran1.f
+xksone.f: ksone.f gasdev.f probks.f sort.f ran1.f erf.f gcf.f gammln.f gser.f gammp.f
+xkstwo.f: kstwo.f gasdev.f probks.f sort.f ran1.f
+xlaguer.f: laguer.f
+xlfit.f: lfit.f covsrt.f gaussj.f gasdev.f ran1.f
+xlinbcg.f: linbcg.f snrm.f atimes.f asolve.f dsprstx.f dsprsax.f
+xlinmin.f: linmin.f brent.f f1dim.f mnbrak.f
+xlocate.f: locate.f
+xlubksb.f: lubksb.f ludcmp.f
+xludcmp.f: ludcmp.f
+xmachar.f: machar.f
+xmedfit.f: medfit.f fit.f rofunc.f select.f gammq.f gammln.f gcf.f gser.f gasdev.f ran1.f
+xmemcof.f: memcof.f
+xmgfas.f: mgfas.f slvsm2.f relax2.f lop.f matadd.f matsub.f anorm2.f rstrct.f interp.f copy.f fill0.f
+xmglin.f: mglin.f addint.f slvsml.f relax.f resid.f maloc.f rstrct.f interp.f copy.f fill0.f
+xmidpnt.f: midpnt.f
+xmiser.f: miser.f ranpt.f ran1.f
+xmmid.f: mmid.f bessj0.f bessj1.f bessj.f
+xmnbrak.f: mnbrak.f bessj0.f
+xmnewt.f: mnewt.f ludcmp.f lubksb.f
+xmoment.f: moment.f
+xmppi.f: mppi.f mpsqrt.f mp2dfr.f mpinv.f mpdiv.f mpmul.f mpops.f drealft.f dfour1.f
+xmprove.f: mprove.f ludcmp.f lubksb.f ran3.f
+xmrqcof.f: mrqcof.f  fgauss.f gasdev.f ran1.f
+xmrqmin.f: mrqmin.f mrqcof.f covsrt.f fgauss.f gaussj.f gasdev.f ran1.f
+xnewt.f: newt.f fdjac.f fmin.f lnsrch.f ludcmp.f lubksb.f
+xodeint.f: odeint.f rkqs.f rkck.f bessj0.f bessj1.f bessj.f
+xorthog.f: orthog.f gaucof.f tqli.f pythag.f eigsrt.f
+xpade.f: pade.f ratval.f ludcmp.f lubksb.f mprove.f
+xpccheb.f: pccheb.f pcshft.f chebpc.f
+xpcshft.f: pcshft.f chebft.f chebpc.f
+xpearsn.f: pearsn.f betai.f betacf.f gammln.f
+xperiod.f: period.f avevar.f gasdev.f ran1.f
+xpiksr2.f: piksr2.f
+xpiksrt.f: piksrt.f
+xplgndr.f: plgndr.f
+xpoidev.f: poidev.f ran1.f gammln.f
+xpolcoe.f: polcoe.f
+xpolcof.f: polcof.f polint.f
+xpoldiv.f: poldiv.f
+xpolin2.f: polin2.f polint.f
+xpolint.f: polint.f
+xpowell.f: powell.f linmin.f bessj0.f brent.f f1dim.f mnbrak.f
+xpredic.f: predic.f fixrts.f memcof.f zroots.f laguer.f
+xprobks.f: probks.f
+xpsdes.f: psdes.f
+xpzextr.f: pzextr.f
+xqgaus.f: qgaus.f
+xqrdcmp.f: qrdcmp.f
+xqromb.f: qromb.f trapzd.f polint.f
+xqromo.f: qromo.f midinf.f midsql.f midsqu.f midexp.f polint.f
+xqroot.f: qroot.f poldiv.f
+xqrsolv.f: qrsolv.f qrdcmp.f rsolv.f
+xqrupdt.f: qrupdt.f qrdcmp.f rotate.f
+xqsimp.f: qsimp.f trapzd.f
+xqtrap.f: qtrap.f trapzd.f
+xquad3d.f: quad3d.f
+xran.f: ran0.f ran1.f ran2.f ran3.f
+xran4.f: ran4.f psdes.f
+xrank.f: rank.f indexx.f
+xratint.f: ratint.f
+xratlsq.f: ratlsq.f ratval.f dsvbksb.f dsvdcmp.f dpythag.f
+xrc.f: rc.f
+xrd.f: rd.f
+xrealft.f: realft.f four1.f
+xrf.f: rf.f
+xrj.f: rj.f rc.f rf.f
+xrk4.f: rk4.f bessj0.f bessj1.f bessj.f
+xrkdumb.f: rkdumb.f rk4.f bessj0.f bessj1.f bessj.f
+xrkqs.f: rkqs.f rkck.f bessj0.f bessj1.f bessj.f
+xrlft3.f: rlft3.f fourn.f ran1.f
+xrofunc.f: rofunc.f select.f sort.f gasdev.f ran1.f
+xrtbis.f: rtbis.f zbrak.f bessj0.f
+xrtflsp.f: rtflsp.f zbrak.f bessj0.f
+xrtnewt.f: rtnewt.f zbrak.f bessj0.f bessj1.f
+xrtsafe.f: rtsafe.f zbrak.f bessj0.f bessj1.f
+xrtsec.f: rtsec.f zbrak.f bessj0.f
+xrzextr.f: rzextr.f
+xsavgol.f: savgol.f ludcmp.f lubksb.f
+xscrsho.f: scrsho.f bessj0.f
+xselect.f: select.f selip.f shell.f
+xselip.f:  selip.f shell.f
+xshell.f: shell.f
+xsimplx.f: simplx.f simp1.f simp2.f simp3.f
+xsimpr.f: simpr.f jacobn.f lubksb.f ludcmp.f
+xsinft.f: sinft.f realft.f four1.f
+xsncndn.f: sncndn.f
+xsobseq.f: sobseq.f
+xsor.f: sor.f
+xsort.f: sort.f
+xsort2.f: sort2.f
+xsort3.f: sort3.f indexx.f
+xspctrm.f: spctrm.f four1.f
+xspear.f: spear.f betai.f betacf.f erfcc.f crank.f sort2.f gammln.f
+xsphbes.f: sphbes.f bessjy.f beschb.f chebev.f
+xsphfpt.f: sphfpt.f shootf.f odeint.f rkqs.f rkck.f newt.f fdjac.f fmin.f lnsrch.f lubksb.f ludcmp.f
+xsplie2.f: splie2.f spline.f
+xsplin2.f: splin2.f splie2.f spline.f splint.f
+xspline.f: spline.f
+xsplint.f: splint.f spline.f
+xsprsax.f: sprsax.f sprsin.f
+xsprsin.f: sprsin.f
+xsprspm.f: sprspm.f sprstp.f sprsin.f iindexx.f
+xsprstm.f: sprstm.f sprstp.f sprsin.f iindexx.f
+xsprstp.f: sprstp.f sprsin.f iindexx.f
+xsprstx.f: sprstx.f sprsin.f
+xstifbs.f: stifbs.f simpr.f pzextr.f jacobn.f odeint.f lubksb.f ludcmp.f
+xstiff.f: stiff.f jacobn.f odeint.f lubksb.f ludcmp.f
+xstoerm.f: stoerm.f
+xsvbksb.f: svbksb.f svdcmp.f pythag.f
+xsvdcmp.f: svdcmp.f pythag.f
+xsvdfit.f: svdfit.f svdvar.f  fpoly.f fleg.f svdcmp.f pythag.f svbksb.f gasdev.f ran1.f
+xsvdvar.f: svdvar.f
+xtoeplz.f: toeplz.f
+xtptest.f: tptest.f avevar.f betai.f gasdev.f betacf.f gammln.f ran1.f
+xtqli.f: tqli.f pythag.f tred2.f
+xtrapzd.f: trapzd.f
+xtred2.f: tred2.f
+xtridag.f: tridag.f
+xttest.f: ttest.f avevar.f betai.f gasdev.f betacf.f gammln.f ran1.f
+xtutest.f: tutest.f avevar.f betai.f gasdev.f betacf.f gammln.f ran1.f
+xtwofft.f: twofft.f four1.f
+xvander.f: vander.f
+xvegas.f: vegas.f rebin.f ran2.f
+xvoltra.f: voltra.f lubksb.f ludcmp.f
+xwt1.f: wt1.f pwtset.f pwt.f daub4.f select.f
+xwtn.f: wtn.f pwtset.f pwt.f
+xzbrac.f: zbrac.f bessj0.f
+xzbrak.f: zbrak.f bessj0.f
+xzbrent.f: zbrent.f zbrak.f bessj0.f
+xzrhqr.f: zrhqr.f balanc.f hqr.f
+xzriddr.f: zriddr.f zbrak.f bessj0.f
+xzroots.f: zroots.f laguer.f

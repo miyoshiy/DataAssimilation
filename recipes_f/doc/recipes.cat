@@ -1,0 +1,990 @@
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+
+     NAME
+          _N_u_m_e_r_i_c_a_l _R_e_c_i_p_e_s
+
+     SYNOPSIS
+          librecipes_f.a - Numerical recipes in Fortran
+          librecipes_c.a - Numerical recipes in C (ANSI version)
+          librecipes_ckr.a - Numerical recipes in C (K&R version)
+
+     DESCRIPTION
+          The _N_u_m_e_r_i_c_a_l _R_e_c_i_p_e_s is a collection of numerical routines which
+          are useful for many scientific and engineering applications. Ver-
+          sions exist for both the C and Fortran languages. The book _N_u_m_e_r_-
+          _i_c_a_l _R_e_c_i_p_e_s will tell you everything you want to know.
+
+          The routines are called from the user's program.  At compilation,
+          the "-lrecipes_f" or "-lrecipes_c -lm" or "-lrecipes_ckr -lm"
+          option is added. Thus a program _m_y_p_r_o_g._f, which contains calls to
+          the recipes, is compiled with: _f_7_7 _m_y_p_r_o_g._f -_l_r_e_c_i_p_e_s__f
+          Note that the C compiler does not automatically include the math
+          library the way the Fortran compiler does, so -lm is often
+          required.
+
+     FILES
+          /usr/local/lib/librecipes_f.a
+          /usr/local/lib/librecipes_c.a
+          /usr/local/lib/librecipes_ckr.a
+          /usr/local/src/recipes
+          /usr/local/src/recipes/recipes_f
+          /usr/local/src/recipes/recipes_c-ansi
+          /usr/local/src/recipes/recipes_c-kr
+
+          The directories /usr/local/src and /usr/local/lib are generic
+          examples.  The actual locations may vary on your system.
+
+     RECIPES
+          Numerical Recipes in the recipes directory (all .f)
+          (main book section numbers are in parentheses)
+
+          _A_D_D_I_N_T  interpolate and add, used by _M_G_L_I_N (19.6)
+
+          _A_I_R_Y    Airy functions (6.7)
+
+          _A_M_E_B_S_A  simulated annealing in continuous spaces (10.9)
+
+          _A_M_O_E_B_A  minimize in N-dimensions by downhill simplex method
+                  (10.4)
+
+          _A_M_O_T_R_Y  evaluate a trial point, used by _A_M_O_E_B_A (10.4)
+
+          _A_M_O_T_S_A  evaluate a trial point, used by _A_M_E_B_S_A (10.9)
+
+          _A_N_N_E_A_L  traveling salesman problem by simulated annealing (10.9)
+
+
+
+                                                                          1
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+          _A_N_O_R_M_2  utility used by _M_G_F_A_S (19.6)
+
+          _A_R_C_M_A_K  construct an arithmetic code (20.5)
+
+          _A_R_C_O_D_E  encode or decode a character using arithmetic coding
+                  (20.5)
+
+          _A_R_C_S_U_M  add integer to byte string, used by _A_R_C_O_D_E (20.5)
+
+          _A_S_O_L_V_E  used by _L_I_N_B_C_G for preconditioner (2.7)
+
+          _A_T_I_M_E_S  used by _L_I_N_B_C_G for sparse multiplication (2.7)
+
+          _A_V_E_V_A_R  calculate mean and variance of a data set (14.2)
+
+          _B_A_D_L_U_K  Friday the 13th when the moon is full (1.1)
+
+          _B_A_L_A_N_C  balance a nonsymmetric matrix (11.5)
+
+          _B_A_N_B_K_S  band diagonal systems, backsubstitution (2.4)
+
+          _B_A_N_D_E_C  band diagonal systems, decomposition (2.4)
+
+          _B_A_N_M_U_L  multiply vector by band diagonal matrix (2.4)
+
+          _B_C_U_C_O_F  construct two-dimensional bicubic (3.6)
+
+          _B_C_U_I_N_T  two-dimensional bicubic interpolation (3.6)
+
+          _B_E_S_C_H_B  Chebyshev expansion used by _B_E_S_S_J_Y (6.7)
+
+          _B_E_S_S_I   modified Bessel function I of integer order (6.6)
+
+          _B_E_S_S_I_0  modified Bessel function I_0 (6.6)
+
+          _B_E_S_S_I_1  modified Bessel function I_1 (6.6)
+
+          _B_E_S_S_I_K  modified Bessel functions of fractional order (6.7)
+
+          _B_E_S_S_J   Bessel function J of general integer order (6.5)
+
+          _B_E_S_S_J_0  Bessel function J_0 (6.5)
+
+          _B_E_S_S_J_1  Bessel function J_1 (6.5)
+
+          _B_E_S_S_J_Y  Bessel functions of fractional order (6.7)
+
+          _B_E_S_S_K   modified Bessel function K of integer order (6.6)
+
+          _B_E_S_S_K_0  modified Bessel function K_0 (6.6)
+
+          _B_E_S_S_K_1  modified Bessel function K_1 (6.6)
+
+          _B_E_S_S_Y   Bessel function Y of general integer order (6.5)
+
+
+     2
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+
+          _B_E_S_S_Y_0  Bessel function Y_0 (6.5)
+
+          _B_E_S_S_Y_1  Bessel function Y_1 (6.5)
+
+          _B_E_T_A    beta function (6.1)
+
+          _B_E_T_A_C_F  continued fraction used by _B_E_T_A_I (6.4)
+
+          _B_E_T_A_I   incomplete beta function (6.4)
+
+          _B_I_C_O    binomial coefficients function (6.1)
+
+          _B_K_S_U_B   backsubstitution, used by _S_O_L_V_D_E (17.3)
+
+          _B_N_L_D_E_V  binomial distributed random deviates (7.3)
+
+          _B_R_E_N_T   find minimum of a function by Brent's method (10.2)
+
+          _B_R_O_Y_D_N  secant method for systems of equations (9.7)
+
+          _B_S_S_T_E_P  integrate ODEs, Bulirsch-Stoer step (16.4)
+
+          _C_A_L_D_A_T  calendar date from Julian day number (1.1)
+
+          _C_H_D_E_R   derivative of a function already Chebyshev fitted (5.9)
+
+          _C_H_E_B_E_V  Chebyshev polynomial evaluation (5.8)
+
+          _C_H_E_B_F_T  fit a Chebyshev polynomial to a function (5.8)
+
+          _C_H_E_B_P_C  polynomial coefficients from a Chebyshev fit (5.10)
+
+          _C_H_I_N_T   integrate a function already Chebyshev fitted (5.9)
+
+          _C_H_I_X_Y   used by _F_I_T_E_X_Y to calculate a chi^2 (15.3)
+
+          _C_H_O_L_D_C  Cholesky decomposition (2.9)
+
+          _C_H_O_L_S_L  Cholesky backsubstitution (2.9)
+
+          _C_H_S_O_N_E  chi-square test for difference between data and model
+                  (14.3)
+
+          _C_H_S_T_W_O  chi-square test for difference between two data sets
+                  (14.3)
+
+          _C_I_S_I    cosine and sine integrals Ci and Si (6.9)
+
+          _C_N_T_A_B_1  contingency table analysis using chi-square (14.4)
+
+          _C_N_T_A_B_2  contingency table analysis using entropy measure (14.4)
+
+          _C_O_N_V_L_V  convolution or deconvolution of data using FFT (13.1)
+
+
+                                                                          3
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+
+          _C_O_P_Y    utility used by _M_G_L_I_N, _M_G_F_A_S (19.6)
+
+          _C_O_R_R_E_L  correlation or autocorrelation of data using FFT (13.2)
+
+          _C_O_S_F_T_1  fast cosine transform with endpoints (12.3)
+
+          _C_O_S_F_T_2  ``staggered'' fast cosine transform (12.3)
+
+          _C_O_V_S_R_T  rearrange covariance matrix, used by _L_F_I_T (15.4)
+
+          _C_R_A_N_K   replaces array elements by their rank (14.6)
+
+          _C_Y_C_L_I_C  solution of cyclic tridiagonal systems (2.7)
+
+          _D_A_U_B_4   Daubechies 4-coefficient wavelet filter (13.10)
+
+          _D_A_W_S_O_N  Dawson's integral (6.10)
+
+          _D_B_R_E_N_T  find minimum of a function using derivative information
+                  (10.3)
+
+          _D_D_P_O_L_Y  evaluate a polynomial and its derivatives (5.3)
+
+          _D_E_C_C_H_K  decimal check digit calculation or verification (20.3)
+
+          _D_E_R_I_V_S  sample derivatives routine for _S_T_I_F_F (16.6)
+
+          _D_F_1_D_I_M  alternative function used by _L_I_N_M_I_N (10.6)
+
+          _D_F_P_M_I_N  minimize in N-dimensions by variable metric method (10.7)
+
+          _D_F_R_I_D_R  numerical derivative by Ridders' method (5.7)
+
+          _D_F_T_C_O_R  compute endpoint corrections for Fourier integrals (13.9)
+
+          _D_F_T_I_N_T  high-accuracy Fourier integrals (13.9)
+
+          _D_I_F_E_Q   spheroidal matrix coefficients, used by _S_F_R_O_I_D (17.4)
+
+          _D_P_Y_T_H_A_G, _D_R_E_A_L_F_T, _D_S_P_R_S_A_X, _D_S_P_R_S_T_X, _D_S_V_B_K_S_B, _D_S_V_D_C_M_P
+                  double precision versions of routines minus initial D
+
+          _E_C_L_A_S_S  determine equivalence classes from list (8.6)
+
+          _E_C_L_A_Z_Z  determine equivalence classes from procedure (8.6)
+
+          _E_I      exponential integral Ei (6.3)
+
+          _E_I_G_S_R_T  eigenvectors, sorts into order by eigenvalue (11.1)
+
+          _E_L_L_E    Legendre elliptic integral of the second kind (6.11)
+
+          _E_L_L_F    Legendre elliptic integral of the first kind (6.11)
+
+
+     4
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+
+          _E_L_L_P_I   Legendre elliptic integral of the third kind (6.11)
+
+          _E_L_M_H_E_S  reduce a general matrix to Hessenberg form (11.5)
+
+          _E_R_F     error function (6.2)
+
+          _E_R_F_C    complementary error function (6.2)
+
+          _E_R_F_C_C   complementary error function, concise routine (6.2)
+
+          _E_U_L_S_U_M  sum a series by Euler-van Wijngaarden algorithm (5.1)
+
+          _E_V_L_M_E_M  power spectral estimation from MEM coefficients (13.7)
+
+          _E_X_P_D_E_V  exponential random deviates (7.2)
+
+          _E_X_P_I_N_T  exponential integral E_n (6.3)
+
+          _F_1_D_I_M   function used by _L_I_N_M_I_N (10.5)
+
+          _F_A_C_T_L_N  logarithm of factorial function (6.1)
+
+          _F_A_C_T_R_L  factorial function (6.1)
+
+          _F_A_S_P_E_R  power spectrum of unevenly sampled larger data sets
+                  (13.8)
+
+          _F_D_J_A_C   finite-difference Jacobian, used by _N_E_W_T (9.7)
+
+          _F_G_A_U_S_S  fit a sum of Gaussians using _M_R_Q_M_I_N (15.5)
+
+          _F_I_L_L_0   utility used by _M_G_L_I_N (19.6)
+
+          _F_I_T     least-squares fit data to a straight line (15.2)
+
+          _F_I_T_E_X_Y  fit data to a straight line, errors in both x and y
+                  (15.3)
+
+          _F_I_X_R_T_S  reflect roots of a polynomial into unit circle (13.6)
+
+          _F_L_E_G    fit a Legendre polynomial using _L_F_I_T or _S_V_D_F_I_T (15.4)
+
+          _F_L_M_O_O_N  calculate phases of the moon by date (1.0)
+
+          _F_M_I_N    norm of a vector function, used by _N_E_W_T (9.7)
+
+          _F_O_U_R_1   fast Fourier transform (FFT) in one dimension (12.2)
+
+          _F_O_U_R_E_W  rewind and permute files, used by _F_O_U_R_F_S (12.6)
+
+          _F_O_U_R_F_S  FFT for huge data sets on external media (12.6)
+
+          _F_O_U_R_N   fast Fourier transform in multidimensions (12.4)
+
+
+                                                                          5
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+
+          _F_P_O_L_Y   fit a polynomial using _L_F_I_T or _S_V_D_F_I_T (15.4)
+
+          _F_R_E_D_2   solve linear Fredholm equations of the second kind (18.1)
+
+          _F_R_E_D_E_X  example of solving a singular Fredholm equation (18.3)
+
+          _F_R_E_D_I_N  interpolate solutions obtained with _f_r_e_d_2 (18.1)
+
+          _F_R_E_N_E_L  Fresnel integrals S(x) and C(x) (6.9)
+
+          _F_R_P_R_M_N  minimize in N-dimensions by conjugate gradient (10.6)
+
+          _F_T_E_S_T   F-test for difference of variances (14.2)
+
+          _G_A_M_D_E_V  gamma-law distribution random deviates (7.3)
+
+          _G_A_M_M_L_N  logarithm of gamma function (6.1)
+
+          _G_A_M_M_P   incomplete gamma function (6.2)
+
+          _G_A_M_M_Q   complement of incomplete gamma function (6.2)
+
+          _G_A_S_D_E_V  normally distributed random deviates (7.2)
+
+          _G_A_U_C_O_F  quadrature weights from orthogonal polynomials (4.5)
+
+          _G_A_U_H_E_R  Gauss-Hermite weights and abscissas (4.5)
+
+          _G_A_U_J_A_C  Gauss-Jacobi weights and abscissas (4.5)
+
+          _G_A_U_L_A_G  Gauss-Laguerre weights and abscissas (4.5)
+
+          _G_A_U_L_E_G  Gauss-Legendre weights and abscissas (4.5)
+
+          _G_A_U_S_S_J  Gauss-Jordan matrix inversion and linear equation solu-
+                  tion (2.1)
+
+          _G_C_F     continued fraction used by _G_A_M_M_P and _G_A_M_M_Q (6.2)
+
+          _G_O_L_D_E_N  find minimum of a function by golden section search
+                  (10.1)
+
+          _G_S_E_R    series used by _G_A_M_M_P and _G_A_M_M_Q (6.2)
+
+          _H_P_S_E_L   find M largest values, without altering an array (8.5)
+
+          _H_P_S_O_R_T  sort an array by heapsort method (8.3)
+
+          _H_Q_R     eigenvalues of a Hessenberg matrix (11.6)
+
+          _H_U_F_A_P_P  append bits to a Huffman code, used by _H_U_F_M_A_K (20.4)
+
+          _H_U_F_D_E_C  use Huffman code to decode and decompress a character
+
+
+     6
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+                  (20.4)
+
+          _H_U_F_E_N_C  use Huffman code to encode and compress a character
+                  (20.4)
+
+          _H_U_F_M_A_K  construct a Huffman code (20.4)
+
+          _H_U_N_T    search a table when calls are correlated (3.4)
+
+          _H_Y_P_D_R_V  complex hypergeometric function, derivative of (6.12)
+
+          _H_Y_P_G_E_O  complex hypergeometric function (6.12)
+
+          _H_Y_P_S_E_R  complex hypergeometric function, series evaluation (6.12)
+
+          _I_C_R_C    cyclic redundancy checksum (20.3)
+
+          _I_C_R_C_1   cyclic redundancy checksum, used by _I_C_R_C (20.3)
+
+          _I_G_R_A_Y   Gray code and its inverse (20.2)
+
+          _I_I_N_D_E_X_X integer array version of _I_N_D_E_X_X (8.4)
+
+          _I_N_D_E_X_X  construct an index for an array (8.4)
+
+          _I_N_T_E_R_P  bilinear prolongation, used by _M_G_L_I_N, _M_G_F_A_S (19.6)
+
+          _I_R_B_I_T_1  random bit sequence (7.4)
+
+          _I_R_B_I_T_2  random bit sequence (7.4)
+
+          _J_A_C_O_B_I  eigenvalues and eigenvectors of a symmetric matrix (11.1)
+
+          _J_A_C_O_B_N  sample Jacobian routine for _S_T_I_F_F (16.6)
+
+          _J_U_L_D_A_Y  Julian Day number from calendar date (1.1)
+
+          _K_E_N_D_L_1  correlation between two data sets, Kendall's tau (14.6)
+
+          _K_E_N_D_L_2  contingency table analysis using Kendall's tau (14.6)
+
+          _K_E_R_M_O_M  sample routine for moments of a singular kernel (18.3)
+
+          _K_S_2_D_1_S  K-S test in two dimensions, data vs. model (14.7)
+
+          _K_S_2_D_2_S  K-S test in two dimensions, data vs. data (14.7)
+
+          _K_S_O_N_E   Kolmogorov-Smirnov test of data against model (14.3)
+
+          _K_S_T_W_O   Kolmogorov-Smirnov test between two data sets (14.3)
+
+          _L_A_G_U_E_R  find a root of a polynomial by Laguerre's method (9.5)
+
+          _L_F_I_T    general linear least-squares fit by normal equations
+
+
+                                                                          7
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+                  (15.4)
+
+          _L_I_N_B_C_G  biconjugate gradient solution of sparse systems (2.7)
+
+          _L_I_N_M_I_N  minimum of a function along a ray in N-dimensions (10.5)
+
+          _L_N_S_R_C_H  search along a line, used by _N_E_W_T (9.7)
+
+          _L_O_C_A_T_E  search an ordered table by bisection (3.4)
+
+          _L_O_P     applies nonlinear operator, used by _M_G_F_A_S (19.6)
+
+          _L_U_B_K_S_B  linear equation solution, backsubstitution (2.3)
+
+          _L_U_D_C_M_P  linear equation solution, LU decomposition (2.3)
+
+          _M_A_C_H_A_R  diagnose computer's floating arithmetic (20.1)
+
+          _M_A_L_O_C   memory allocation utility used by _M_G_L_I_N, _M_G_F_A_S (19.6)
+
+          _M_A_T_A_D_D  utility used by _M_G_F_A_S (19.6)
+
+          _M_A_T_S_U_B  utility used by _M_G_F_A_S (19.6)
+
+          _M_E_D_F_I_T  fit data to a straight line robustly, least absolute
+                  deviation (15.7)
+
+          _M_E_M_C_O_F  evaluate maximum entropy (MEM) coefficients (13.6)
+
+          _M_E_T_R_O_P  Metropolis algorithm, used by _A_N_N_E_A_L (10.9)
+
+          _M_G_F_A_S   nonlinear elliptic PDE solved by multigrid method (19.6)
+
+          _M_G_L_I_N   linear elliptic PDE solved by multigrid method (19.6)
+
+          _M_I_D_E_X_P  integrate a function that decreases exponentially (4.4)
+
+          _M_I_D_I_N_F  integrate a function on a semi-infinite interval (4.4)
+
+          _M_I_D_P_N_T  extended midpoint rule (4.4)
+
+          _M_I_D_S_Q_L  integrate a function with lower square-root singularity
+                  (4.4)
+
+          _M_I_D_S_Q_U  integrate a function with upper square-root singularity
+                  (4.4)
+
+          _M_I_S_E_R   recursive multidimensional Monte Carlo integration (7.8)
+
+          _M_M_I_D    integrate ODEs by modified midpoint method (16.3)
+
+          _M_N_B_R_A_K  bracket the minimum of a function (10.1)
+
+          _M_N_E_W_T   Newton's method for systems of equations (9.6)
+
+
+     8
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+
+          _M_O_M_E_N_T  calculate moments of a data set (14.1)
+
+          _M_P_2_D_F_R  multiple precision conversion to decimal base (20.6)
+
+          _M_P_D_I_V   multiple precision divide and remainder (20.6)
+
+          _M_P_I_N_V   multiple precision reciprocal (20.6)
+
+          _M_P_M_U_L   multiple precision multiply, using FFT methods (20.6)
+
+          _M_P_O_P_S   multiple precision arithmetic, simpler operations (20.6)
+
+          _M_P_P_I    multiple precision example, compute many digits of pi
+                  (20.6)
+
+          _M_P_R_O_V_E  linear equation solution, iterative improvement (2.5)
+
+          _M_P_S_Q_R_T  multiple precision square root (20.6)
+
+          _M_R_Q_C_O_F  used by _M_R_Q_M_I_N to evaluate coefficients (15.5)
+
+          _M_R_Q_M_I_N  nonlinear least-squares fit, Marquardt's method (15.5)
+
+          _N_E_W_T    globally convergent multi-dimensional Newton's method
+                  (9.7)
+
+          _O_D_E_I_N_T  integrate ODEs with accuracy monitoring (16.2)
+
+          _O_R_T_H_O_G  construct nonclassical orthogonal polynomials (4.5)
+
+          _P_A_D_E    Pade approximant from power series coefficients (5.12)
+
+          _P_C_C_H_E_B  inverse of _C_H_E_B_P_C; use to economize power series (5.11)
+
+          _P_C_S_H_F_T  polynomial coefficients of a shifted polynomial (5.10)
+
+          _P_E_A_R_S_N  Pearson's correlation between two data sets (14.5)
+
+          _P_E_R_I_O_D  power spectrum of unevenly sampled data (13.8)
+
+          _P_I_K_S_R_2  sort two arrays by straight insertion (8.1)
+
+          _P_I_K_S_R_T  sort an array by straight insertion (8.1)
+
+          _P_I_N_V_S   diagonalize a sub-block, used by _S_O_L_V_D_E (17.3)
+
+          _P_L_G_N_D_R  Legendre polynomials, associated (spherical harmonics)
+                  (6.8)
+
+          _P_O_I_D_E_V  Poisson distributed random deviates (7.3)
+
+          _P_O_L_C_O_E  polynomial coefficients from table of values (3.5)
+
+
+
+                                                                          9
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+          _P_O_L_C_O_F  polynomial coefficients from table of values (3.5)
+
+          _P_O_L_D_I_V  divide one polynomial by another (5.3)
+
+          _P_O_L_I_N_2  two-dimensional polynomial interpolation (3.6)
+
+          _P_O_L_I_N_T  polynomial interpolation (3.1)
+
+          _P_O_W_E_L_L  minimize in N-dimensions by Powell's method (10.5)
+
+          _P_R_E_D_I_C  linear prediction using MEM coefficients (13.6)
+
+          _P_R_O_B_K_S  Kolmogorov-Smirnov probability function (14.3)
+
+          _P_S_D_E_S   pseudo-DES hashing of 64 bits (7.5)
+
+          _P_W_T     partial wavelet transform (13.10)
+
+          _P_W_T_S_E_T  initialize coefficients for _P_W_T (13.10)
+
+          _P_Y_T_H_A_G  calculate (a^2+b^2)^1/2 without overflow (2.6)
+
+          _P_Z_E_X_T_R  polynomial extrapolation, used by _B_S_S_T_E_P (16.4)
+
+          _Q_G_A_U_S   integrate a function by Gaussian quadratures (4.5)
+
+          _Q_R_D_C_M_P  QR decomposition (2.10)
+
+          _Q_R_O_M_B   integrate using Romberg adaptive method (4.3)
+
+          _Q_R_O_M_O   integrate using open Romberg adaptive method (4.4)
+
+          _Q_R_O_O_T   complex or double root of a polynomial, Bairstow (9.5)
+
+          _Q_R_S_O_L_V  QR backsubstitution (2.10)
+
+          _Q_R_U_P_D_T  update a QR decomposition (2.10)
+
+          _Q_S_I_M_P   integrate using Simpson's rule (4.2)
+
+          _Q_T_R_A_P   integrate using trapezoidal rule (4.2)
+
+          _Q_U_A_D_3_D  integrate a function over a three-dimensional space (4.6)
+
+          _Q_U_A_D_C_T  count points by quadrants, used by _k_s_2_d_1_s (14.7)
+
+          _Q_U_A_D_M_X  sample routine for a quadrature matrix (18.3)
+
+          _Q_U_A_D_V_L  quadrant probabilities, used by _k_s_2_d_1_s (14.7)
+
+          _R_A_N_0    random deviate by Park and Miller minimal standard (7.1)
+
+          _R_A_N_1    random deviate, minimal standard plus shuffle (7.1)
+
+
+
+     10
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+          _R_A_N_2    random deviate by L'Ecuyer long period plus shuffle (7.1)
+
+          _R_A_N_3    random deviate by Knuth subtractive method (7.1)
+
+          _R_A_N_4    random deviates from DES-like hashing (7.5)
+
+          _R_A_N_K    construct a rank table for an array (8.4)
+
+          _R_A_N_P_T   get random point, used by _M_I_S_E_R (7.8)
+
+          _R_A_T_I_N_T  rational function interpolation (3.2)
+
+          _R_A_T_L_S_Q  rational fit by least-squares method (5.13)
+
+          _R_A_T_V_A_L  evaluate a rational function (5.3)
+
+          _R_C      Carlson's degenerate elliptic integral (6.11)
+
+          _R_D      Carlson's elliptic integral of the second kind (6.11)
+
+          _R_E_A_L_F_T  fast Fourier transform of a single real function (12.3)
+
+          _R_E_B_I_N   sample rebinning used by _V_E_G_A_S (7.8)
+
+          _R_E_D     reduce columns of a matrix, used by _S_O_L_V_D_E (17.3)
+
+          _R_E_L_A_X   Gauss-Seidel relaxation, used by _M_G_L_I_N (19.6)
+
+          _R_E_L_A_X_2  Gauss-Seidel relaxation, used by _M_G_F_A_S (19.6)
+
+          _R_E_S_I_D   calculate residual, used by _M_G_L_I_N (19.6)
+
+          _R_E_V_C_S_T  cost of a reversal, used by _A_N_N_E_A_L (10.9)
+
+          _R_E_V_E_R_S  do a reversal, used by _A_N_N_E_A_L (10.9)
+
+          _R_F      Carlson's elliptic integral of the first kind (6.11)
+
+          _R_J      Carlson's elliptic integral of the third kind (6.11)
+
+          _R_K_4     integrate one step of ODEs, fourth-order Runge-Kutta
+                  (16.1)
+
+          _R_K_C_K    Cash-Karp-Runge-Kutta step used by _R_K_Q_S (16.2)
+
+          _R_K_D_U_M_B  integrate ODEs by fourth-order Runge-Kutta (16.1)
+
+          _R_K_Q_S    integrate one step of ODEs with accuracy monitoring
+                  (16.2)
+
+          _R_L_F_T_3   FFT of real data in two or three dimensions (12.5)
+
+          _R_O_F_U_N_C  fit data robustly, used by _M_E_D_F_I_T (15.7)
+
+
+
+                                                                         11
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+          _R_O_T_A_T_E  Jacobi rotation used by _Q_R_U_P_D_T (2.10)
+
+          _R_S_O_L_V   right triangular backsubstitution (2.10)
+
+          _R_S_T_R_C_T  half-weighting restriction, used by _M_G_L_I_N, _M_G_F_A_S (19.6)
+
+          _R_T_B_I_S   find root of a function by bisection (9.1)
+
+          _R_T_F_L_S_P  find root of a function by false-position (9.2)
+
+          _R_T_N_E_W_T  find root of a function by Newton-Raphson (9.4)
+
+          _R_T_S_A_F_E  find root of a function by Newton-Raphson and bisection
+                  (9.4)
+
+          _R_T_S_E_C   find root of a function by secant method (9.2)
+
+          _R_Z_E_X_T_R  rational function extrapolation, used by _B_S_S_T_E_P (16.4)
+
+          _S_A_V_G_O_L  Savitzky-Golay smoothing coefficients (14.8)
+
+          _S_C_R_S_H_O  graph a function to search for roots (9.0)
+
+          _S_E_L_E_C_T  find the Nth largest in an array (8.5)
+
+          _S_E_L_I_P   find the Nth largest, without altering an array (8.5)
+
+          _S_F_R_O_I_D  spheroidal functions by method of _S_O_L_V_D_E (17.4)
+
+          _S_H_E_L_L   sort an array by Shell's method (8.1)
+
+          _S_H_O_O_T   solve two point boundary value problem by shooting (17.1)
+
+          _S_H_O_O_T_F  ditto, by shooting to a fitting point (17.2)
+
+          _S_I_M_P_1   linear programming, used by _S_I_M_P_L_X (10.8)
+
+          _S_I_M_P_2   linear programming, used by _S_I_M_P_L_X (10.8)
+
+          _S_I_M_P_3   linear programming, used by _S_I_M_P_L_X (10.8)
+
+          _S_I_M_P_L_X  linear programming maximization of a linear function
+                  (10.8)
+
+          _S_I_M_P_R   integrate stiff ODEs by semi-implicit midpoint rule
+                  (16.6)
+
+          _S_I_N_F_T   fast sine transform (12.3)
+
+          _S_L_V_S_M_2  solve on coarsest grid, used by _M_G_F_A_S (19.6)
+
+          _S_L_V_S_M_L  solve on coarsest grid, used by _M_G_L_I_N (19.6)
+
+          _S_N_C_N_D_N  Jacobian elliptic functions (6.11)
+
+
+     12
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+
+          _S_N_R_M    used by _L_I_N_B_C_G for vector norm (2.7)
+
+          _S_O_B_S_E_Q  Sobol's quasi-random sequence (7.7)
+
+          _S_O_L_V_D_E  two point boundary value problem, solve by relaxation
+                  (17.3)
+
+          _S_O_R     elliptic PDE solved by successive overrelaxation method
+                  (19.5)
+
+          _S_O_R_T    sort an array by quicksort method (8.2)
+
+          _S_O_R_T_2   sort two arrays by quicksort method (8.2)
+
+          _S_O_R_T_3   sort, use an index to sort 3 or more arrays (8.4)
+
+          _S_P_C_T_R_M  power spectrum estimation using FFT (13.4)
+
+          _S_P_E_A_R   Spearman's rank correlation between two data sets (14.6)
+
+          _S_P_H_B_E_S  spherical Bessel functions j_n and y_n (6.7)
+
+          _S_P_H_F_P_T  spheroidal functions by method of _S_H_O_O_T_F (17.4)
+
+          _S_P_H_O_O_T  spheroidal functions by method of _S_H_O_O_T (17.4)
+
+          _S_P_L_I_E_2  construct two-dimensional spline (3.6)
+
+          _S_P_L_I_N_2  two-dimensional spline interpolation (3.6)
+
+          _S_P_L_I_N_E  construct a cubic spline (3.3)
+
+          _S_P_L_I_N_T  cubic spline interpolation (3.3)
+
+          _S_P_R_E_A_D  extirpolate value into array, used by _F_A_S_P_E_R (13.8)
+
+          _S_P_R_S_A_X  product of sparse matrix and vector (2.7)
+
+          _S_P_R_S_I_N  convert matrix to sparse format (2.7)
+
+          _S_P_R_S_P_M  pattern multiply two sparse matrices (2.7)
+
+          _S_P_R_S_T_M  threshold multiply two sparse matrices (2.7)
+
+          _S_P_R_S_T_P  transpose of sparse matix (2.7)
+
+          _S_P_R_S_T_X  product of transpose sparse matrix and vector (2.7)
+
+          _S_T_I_F_B_S  integrate stiff ODEs, Bulirsch-Stoer step (16.6)
+
+          _S_T_I_F_F   integrate stiff ODEs by fourth-order Rosenbrock (16.6)
+
+          _S_T_O_E_R_M  integrate conservative second-order ODEs (16.5)
+
+
+                                                                         13
+
+
+
+
+
+
+     RECIPES(LOCAL)
+
+
+
+          _S_V_B_K_S_B  singular value backsubstitution (2.6)
+
+          _S_V_D_C_M_P  singular value decomposition of a matrix (2.6)
+
+          _S_V_D_F_I_T  linear least-squares fit by singular value decomposition
+                  (15.4)
+
+          _S_V_D_V_A_R  variances from singular value decomposition (15.4)
+
+          _T_O_E_P_L_Z  solve Toeplitz systems (2.8)
+
+          _T_P_T_E_S_T  Student's t-test for means, case of paired data (14.2)
+
+          _T_Q_L_I    eigensolution of a symmetric tridiagonal matrix (11.3)
+
+          _T_R_A_P_Z_D  trapezoidal rule (4.2)
+
+          _T_R_E_D_2   Householder reduction of a real, symmetric matrix (11.2)
+
+          _T_R_I_D_A_G  solution of tridiagonal systems (2.4)
+
+          _T_R_N_C_S_T  cost of a transposition, used by _A_N_N_E_A_L (10.9)
+
+          _T_R_N_S_P_T  do a transposition, used by _A_N_N_E_A_L (10.9)
+
+          _T_T_E_S_T   Student's t-test for difference of means (14.2)
+
+          _T_U_T_E_S_T  Student's t-test for means, case of unequal variances
+                  (14.2)
+
+          _T_W_O_F_F_T  fast Fourier transform of two real functions (12.3)
+
+          _V_A_N_D_E_R  solve Vandermonde systems (2.8)
+
+          _V_E_G_A_S   adaptive multidimensional Monte Carlo integration (7.8)
+
+          _V_O_L_T_R_A  linear Volterra equations of the second kind (18.2)
+
+          _W_T_1     one-dimensional discrete wavelet transform (13.10)
+
+          _W_T_N     multidimensional discrete wavelet transform (13.10)
+
+          _W_W_G_H_T_S  quadrature weights for an arbitrarily singular kernel
+                  (18.3)
+
+          _Z_B_R_A_C   outward search for brackets on roots (9.1)
+
+          _Z_B_R_A_K   inward search for brackets on roots (9.1)
+
+          _Z_B_R_E_N_T  find root of a function by Brent's method (9.3)
+
+          _Z_R_H_Q_R   roots of a polynomial by eigenvalue methods (9.5)
+
+
+
+     14
+
+
+
+
+
+
+                                                             RECIPES(LOCAL)
+
+
+          _Z_R_I_D_D_R  find root of a function by Ridders' method (9.2)
+
+          _Z_R_O_O_T_S  roots of a polynomial by Laguerre's method with deflation
+                  (9.5)
+
+     SEE ALSO
+          _N_u_m_e_r_i_c_a_l _R_e_c_i_p_e_s _i_n _F_o_r_t_r_a_n, _T_h_e _A_r_t _o_f _S_c_i_e_n_t_i_f_i_c _C_o_m_p_u_t_i_n_g
+          (_S_e_c_o_n_d _E_d_i_t_i_o_n), W.H. Press, B.P. Flannery, S.A. Teukolsky, W.T.
+          Vetterling, Cambridge University Press, 1992
+          _N_u_m_e_r_i_c_a_l _R_e_c_i_p_e_s _i_n _C, _T_h_e _A_r_t _o_f _S_c_i_e_n_t_i_f_i_c _C_o_m_p_u_t_i_n_g (_S_e_c_o_n_d
+          _E_d_i_t_i_o_n), W.H. Press, B.P. Flannery, S.A. Teukolsky, W.T. Vetter-
+          ling, Cambridge University Press, 1992
+
+     BUGS
+          See associated documentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                         15
+
+
+99

@@ -1,0 +1,24 @@
+	If you have a fully ANSI-compliant set of #include files and
+C libraries, then compiling nrtodp should be simple. The following line
+should be sufficient:
+
+	cc -DLIBRARY_DIR=\"your library dir here\" -O -s -o nrtodp nrtodp.c
+
+	Type the \" exactly as indicated, but replace the phrase 'your
+library dir here' with the directory in which you will install
+nrtodp.dat. Depending on your compiler, the option -DANSI might also be
+required in the above. However, not all environments have ANSI string
+functions. The ones most likely to be a problem are strchr, strrchr and
+strstr. In some cases, strchr and strrchr are called, respectively,
+index and rindex. So if you receive an error message about "_strchr" and
+"_strrchr" being undefined, try the following:
+
+	cc -Dstrchr=index -Dstrrchr=rindex -DLIBRARY_DIR=\"your library dir here\" -O -s -o nrtodp nrtodp.c
+
+	It is possible that the function strstr is not present in any
+form. For convenience, files implementing strchr, strrchr, and strstr are
+present in this directory. These sources are not part of Numerical
+Recipes, but are from the second Berkeley networking distribution.
+Please note the conditions on their use and redistribution. At this
+point, compiling advice becomes heavily system-dependent, so we refer
+you to your local experts.

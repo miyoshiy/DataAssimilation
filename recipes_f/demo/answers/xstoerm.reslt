@@ -1,0 +1,22 @@
+ Stoermer's Rule:
+
+ X = 0.0000 to 1.5708 in  5 steps
+    Integration    Answer
+     2.583344    2.570796
+     0.460868    0.467400
+ X = 0.0000 to 1.5708 in 15 steps
+    Integration    Answer
+     2.572169    2.570796
+     0.466682    0.467400
+ X = 0.0000 to 1.5708 in 25 steps
+    Integration    Answer
+     2.571290    2.570796
+     0.467142    0.467400
+ X = 0.0000 to 1.5708 in 35 steps
+    Integration    Answer
+     2.571048    2.570796
+     0.467269    0.467400
+ X = 0.0000 to 1.5708 in 45 steps
+    Integration    Answer
+     2.570949    2.570796
+     0.467320    0.467400

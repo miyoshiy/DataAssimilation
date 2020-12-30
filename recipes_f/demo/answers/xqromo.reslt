@@ -1,0 +1,21 @@
+
+ Improper integrals:
+
+ Function: SQRT(x)/SIN(x)       Interval: (0,pi/2)
+ Using: MIDSQL                  Result:  2.7531
+
+ Function: SQRT(pi-x)/SIN(x)    Interval: (pi/2,pi)
+ Using: MIDSQU                  Result:  2.7530
+
+ Function: SIN(x)/x**2          Interval: (pi/2,infty)
+ Using: MIDINF                  Result:  0.1644
+
+ Function: SIN(x)/x**2          Interval: (-infty,-pi/2)
+ Using: MIDINF                  Result: -0.1646
+
+ Function: EXP(-x)/SQRT(x)      Interval: (0.0,infty)
+ Using: MIDSQL,MIDINF           Result:  1.7725
+
+ Function: EXP(-x)/SQRT(x)      Interval: (0.0,infty)
+ Using: MIDSQL,MIDEXP           Result:  1.7725
+

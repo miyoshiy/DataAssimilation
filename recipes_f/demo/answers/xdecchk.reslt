@@ -1,0 +1,15 @@
+ Total tries:                900
+ Bad tries:                   52
+ Fraction good:              .94
+ enter string terminated by x:
+ 1-800-433-7300-7 checks as T
+ enter string terminated by x:
+ 1 (800) 241-6522-6 checks as T
+ enter string terminated by x:
+ 1-800-241-6522-6 checks as T
+ enter string terminated by x:
+ 1 800 428 4322-2 checks as T
+ enter string terminated by x:
+ 02238-0243-3 checks as T
+ enter string terminated by x:
+ NORMAL COMPLETION

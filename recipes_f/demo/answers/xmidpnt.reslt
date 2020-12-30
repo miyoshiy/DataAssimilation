@@ -1,0 +1,13 @@
+ Integral of FUNC2 computed with MIDPNT
+ Actual value of integral is   2.000000    
+      n            Approx. Integral
+      1                1.414214
+      2                1.653049
+      3                1.798624
+      4                1.883616
+      5                1.932792
+      6                1.961197
+      7                1.977596
+      8                1.987067
+      9                1.992540
+     10                1.995701

@@ -1,0 +1,90 @@
+             Numerical Recipes - Compiler Tips and Troubles
+
+	The following is a collection of hints, possible compiler
+problems, and recommendations that have been gathered over time.
+Compilers and operating systems often have many different versions and
+flavors, so the information below is not meant as definitive. It is only
+intended as a guideline and warning of potential hazards. Your local
+experts should be the first people consulted regarding problems you
+experience with Numerical Recipes.
+	
+	Most Fortran compilers have a "-O" option that instructs it to
+use various optimizations. These are intended to produce faster code,
+but sometimes produce bugs. There is often a "-g" option to produce
+information (a symbol table) that is helpful in debugging. But be aware
+that using this option makes the code much larger, and can make it slower.
+
+	Not all systems are treated with equal depth, because of limited
+resources. Any information contributed by users will be greatly
+appreciated.
+
+	Note "-g" overrides "-O" on all Fortrans compilers we know of.
+
+	Many systems nowadays do not have a "ranlib" program. Where
+"ranlib" was previously used in makefiles, the command "ar -ts" has
+replaced it. This may need to be changed to "ar ts" on some systems.
+
+	There may be a problem with certain bit manipulation functions.
+Some compilers use the names IAND, IOR, IEOR, ISHFT, IBSET, IBCLR,
+BTEST. Others use some or all of AND, OR, XOR, LSHIFT, RSHIFT, BIS, BIC,
+BIT. The Fortran distribution of Numerical Recipes uses the first set.
+If your compiler employs different names, you can deal with this
+difference in any of a number of ways - rewriting the files as
+necessary, inserting statement functions, or linking in a file which
+converts between the two conventions using small wrapper functions. The
+last method is represented by a file bits.f, in the recipes_f/misc
+subdirectory. This is provided for convenience only.
+
+Sun:
+	In general, for Suns with Fortran 1.3 or 1.3.1, add "-fast" to
+FFLAGS if you really trust your optimizer, and "-fast -O3" if you really,
+*really* trust your optimizer. Note the "-fast" option generates machine
+specific code based on the compile-time hardware. For example, code
+compiled on a Sun 3 with an MC68881 (or fpa) math co-processor will not
+run on a Sun 3 without the same, and code compiled on a Sun 4/75 (with
+hardware fsqrts and fsqrtd) will not run on a Sun 4/1xx or 4/2xx (with
+or without Weitek 116).
+	On Suns with pre-1.3 FORTRAN, there are hardware specific
+optimizations. For the Sun3, if you want to compile the recipes so that
+they will work whether the machines have an MC68881/2 processor, fpa, or
+no co-processor, use "-fswitch". To create MC68881/2 specific code
+(requires this), set "-f68881", and fpa specific code calls for "-ffpa".
+You can only use one of "-fswitch","-f68881" or "-ffpa". For each of
+these options, you can also add /usr/lib/<fswitch or f68881 or fpa>/libm.il
+to the option list. This adds in-line code.
+	For Sun4 and Sparc with Fortran version <= 1.2, no specific
+hardware options are recommended.
+	On both a Sun3 and Sun4, problems with the combination "-fast -O3"
+(but not just with "-O3") have been observed in the routines
+convlv.f, hypdrv.f, hypser.f, twofft.f. On the Sun3, "-fast" also caused
+problems with arcode.f, icrc.f, icrc1.f, machar.f, mpops.f, mpmul.f.
+	Some potential bugs of which to be wary:
+
+	Sun3/SunOS3.5:
+		convlv.o and correl.o do not compile correctly with
+		the inline code template.
+		svdcmp.o cannot use either the inline code template or
+		the optimizer (-O option).
+	Sun4:
+		Having FLOAT_OPTION = (null string) apparently causes a crash.
+
+DEC ALPHA:
+	Some problems have been observed at high optimization levels. If
+xperiod fails to compile and run properly, the optimizer is probably the
+cause. Note optimization is enabled by default. Use the option -O0 to
+disable it.
+
+Vax: 
+	Some Fortran versions have an ichar() function that returns
+values in the range [-128,127] instead of [0,255]. 
+	The constants given in ran4 as distributed are correct for IEEE
+standard floating point arithmetic. Depending on the floating format
+used, these numbers may have to be changed for the VAX (see the relevant
+section for ran4 in the Numerical Recipes book).
+
+IBM PC/RT workstation:
+	ran1: A bug in the assembler can prevent ran1 from compiling. A
+workaround is to replace the line "j=1+iy/NDIV" with "j=1+(iy/8192)/8192"
+
+NeXT:
+	Use 'ranlib' instead of 'ar' in the master makefile.

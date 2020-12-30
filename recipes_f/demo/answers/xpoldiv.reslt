@@ -1,0 +1,19 @@
+
+
+        X^0       X^1       X^2       X^3       X^4       X^5
+
+ Quotient polynomial coefficients:
+      31.00     -8.00      1.00      0.00      0.00      0.00
+
+ Expected quotient coefficients:
+      31.00     -8.00      1.00      0.00      0.00      0.00
+
+
+
+ Remainder polynomial coefficients:
+     -32.00    -80.00    -80.00      0.00
+
+ Expected remainder coefficients:
+     -32.00    -80.00    -80.00      0.00
+
+

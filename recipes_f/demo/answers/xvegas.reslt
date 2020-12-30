@@ -1,0 +1,49 @@
+ IDUM=
+ ENTER NDIM,XOFF,NCALL,ITMAX,NPRN
+
+ input parameters for vegas:  ndim=  4  ncall=    768.
+                              it=    0  itmx=    4
+                              nprn=  0  alph= 1.50
+                              mds=  1   nd=  50
+                              xl( 1)=  0.0000E+00 xu( 1)=   1.000    
+                              xl( 2)=  0.0000E+00 xu( 2)=   1.000    
+                              xl( 3)=  0.0000E+00 xu( 3)=   1.000    
+                              xl( 4)=  0.0000E+00 xu( 4)=   1.000    
+
+ iteration no.  1: integral = 0.7706086E-01+/-  0.76E-01
+ all iterations:   integral = 0.7706086E-01+/-  0.76E-01 chi**2/it'n = 0.00E+00
+
+ iteration no.  2: integral = 0.2334212E-01+/-  0.75E-02
+ all iterations:   integral = 0.2386378E-01+/-  0.75E-02 chi**2/it'n = 0.49    
+
+ iteration no.  3: integral = 0.4258690E-01+/-  0.66E-02
+ all iterations:   integral = 0.3432380E-01+/-  0.50E-02 chi**2/it'n =  2.0    
+
+ iteration no.  4: integral = 0.6005644E-01+/-  0.46E-02
+ all iterations:   integral = 0.4810645E-01+/-  0.34E-02 chi**2/it'n =  6.1    
+ Number of iterations performed:           4
+ Integral, Standard Dev., Chi-sq.  4.8106447E-02  3.3854251E-03   6.102639    
+
+ input parameters for vegas:  ndim=  4  ncall=    768.
+                              it=    5  itmx=    4
+                              nprn=  0  alph= 1.50
+                              mds=  1   nd=  50
+                              xl( 1)=  0.0000E+00 xu( 1)=   1.000    
+                              xl( 2)=  0.0000E+00 xu( 2)=   1.000    
+                              xl( 3)=  0.0000E+00 xu( 3)=   1.000    
+                              xl( 4)=  0.0000E+00 xu( 4)=   1.000    
+
+ iteration no.  1: integral = 0.6294765E-01+/-  0.26E-02
+ all iterations:   integral = 0.6294765E-01+/-  0.26E-02 chi**2/it'n = 0.00E+00
+
+ iteration no.  2: integral = 0.6291968E-01+/-  0.20E-02
+ all iterations:   integral = 0.6293016E-01+/-  0.16E-02 chi**2/it'n = 0.00E+00
+
+ iteration no.  3: integral = 0.6065372E-01+/-  0.14E-02
+ all iterations:   integral = 0.6163474E-01+/-  0.10E-02 chi**2/it'n = 0.58    
+
+ iteration no.  4: integral = 0.6287680E-01+/-  0.13E-02
+ all iterations:   integral = 0.6213202E-01+/-  0.81E-03 chi**2/it'n = 0.57    
+ Additional iterations performed:           4
+ Integral, Standard Dev., Chi-sq.  6.2132023E-02  8.0995343E-04  0.5734860    
+ NORMAL COMPLETION

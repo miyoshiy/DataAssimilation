@@ -1,0 +1,13 @@
+ Values of a,b,siga,sigb,chi2,q:
+ Fit with x and y errors gives:
+  -5.058980   2.022800   0.274571   0.020892  42.586609   0.038141
+
+ Setting x errors to zero gives:
+  -5.538356   2.008888   0.110675   0.009360 277.534546   0.000000
+ ...to be compared with fit result:
+  -5.538357   2.008888   0.104930   0.008537 277.534424   0.000000
+
+ Setting y errors to zero gives:
+  -5.477018   2.043204   0.184778   0.012426 105.700729   0.000000
+ ...to be compared with fit result:
+  -5.494896   2.044625   0.160466   0.012380 105.687660   0.000000

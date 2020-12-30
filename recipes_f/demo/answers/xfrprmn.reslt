@@ -1,0 +1,29 @@
+
+ Program finds the minimum of a function
+ with different trial starting vectors.
+ True minimum is (0.5,0.5,0.5)
+
+ Starting vector: (2.0000,0.0000,0.0000)
+ Iterations:  4
+ Solution vector: (0.5000,0.4997,0.4997)
+ Func. value at solution  0.000000E+00
+
+ Starting vector: (1.8478,0.7654,0.0000)
+ Iterations:  4
+ Solution vector: (0.5001,0.4998,0.5003)
+ Func. value at solution  0.000000E+00
+
+ Starting vector: (1.4142,1.4142,0.0000)
+ Iterations:  4
+ Solution vector: (0.5001,0.5001,0.5003)
+ Func. value at solution  0.000000E+00
+
+ Starting vector: (0.7654,1.8478,0.0000)
+ Iterations:  4
+ Solution vector: (0.4998,0.5001,0.5003)
+ Func. value at solution  0.000000E+00
+
+ Starting vector: (0.0000,2.0000,0.0000)
+ Iterations:  4
+ Solution vector: (0.4997,0.5000,0.4997)
+ Func. value at solution  0.000000E+00

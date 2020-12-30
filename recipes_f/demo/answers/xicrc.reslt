@@ -1,0 +1,12 @@
+ ENTER LENGTH,STRING: 
+ T
+    XMODEM: String CRC, Packet CRC=      0x1a71         0x0
+      X.25: String CRC, Packet CRC=      0x1b26      0xf0b8
+ CRC-CCITT: String CRC, Packet CRC=      0x14a1         0x0
+ ENTER LENGTH,STRING: 
+ CatMouse987654321
+    XMODEM: String CRC, Packet CRC=      0xe556         0x0
+      X.25: String CRC, Packet CRC=      0xf56e      0xf0b8
+ CRC-CCITT: String CRC, Packet CRC=      0xc28d         0x0
+ ENTER LENGTH,STRING: 
+ NORMAL COMPLETION

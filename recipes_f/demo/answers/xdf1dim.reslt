@@ -1,0 +1,28 @@
+
+ Enter vector direction along which to
+ plot the function. Minimum is in the
+ direction 1.0,1.0,1.0 - Enter X,Y,Z:
+  Enter x1,x2 (= to stop)
+  5.650E-01 x----------------------------------------------------------l
+            l                                                          l
+            lx                                                         x
+            l x                                                       xl
+            l  xx                                                    x l
+            l    x                                                 xx  l
+            l     x                                               x    l
+            l      x                                             x     l
+            l       x                                           x      l
+            l        xx                                       xx       l
+            l          x                                     x         l
+            l           xx                                 xx          l
+            l             xx                             xx            l
+            l               xx                         xx              l
+            l                 xx                     xx                l
+            l                   xxxx             xxxx                  l
+            l                       xxxxxxxxxxxxx                      l
+            l                                                          l
+            l                                                          l
+            l                                                          l
+  0.000E+00 ------------------------------------------------------------
+             6.000E-01                                         1.500E+00
+  Enter x1,x2 (= to stop)

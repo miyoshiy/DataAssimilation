@@ -1,0 +1,25 @@
+ Graph of the Bessel Function J0:
+  Enter x1,x2 (= to stop)
+  7.652E-01 x----------------------------------------------------------l
+            lx                                                         l
+            l x                                                        l
+            l  xx                                                      l
+            l    x                                                     l
+            l     x                                                    l
+            l      x                                                   l
+            l       xx                                                 l
+            l         x                                                l
+            l          x                                               l
+            l           x                                              l
+            l            x                                            xx
+            l             xx                                        xx l
+            l               x                                     xx   l
+            -----------------x----------------------------------xx------
+            l                 xx                              xx       l
+            l                   x                           xx         l
+            l                    xx                       xx           l
+            l                      xx                  xxx             l
+            l                        xxx             xx                l
+ -4.025E-01 l---------------------------xxxxxxxxxxxxx------------------l
+             1.000E+00                                         6.000E+00
+  Enter x1,x2 (= to stop)

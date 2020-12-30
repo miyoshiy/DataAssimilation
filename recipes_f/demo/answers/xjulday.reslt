@@ -1,0 +1,29 @@
+
+ Month     Day  Year  Julian Day    Event
+
+ December   31    -1   1721423      End of millennium                      
+ January     1     1   1721424      One day later                          
+ October     4  1582   2299160      Day before Gregorian calendar          
+ October    15  1582   2299161      Gregorian calendar adopted             
+ January    17  1706   2344180      Benjamin Franklin born                 
+ April      14  1865   2402341      Abraham Lincoln shot                   
+ April      18  1906   2417319      San Francisco earthquake               
+ May         7  1915   2420625      Sinking of the Lusitania               
+ July       20  1923   2423621      Pancho Villa assassinated              
+ May        23  1934   2427581      Bonnie and Clyde eliminated            
+ July       22  1934   2427641      John Dillinger shot                    
+ April       3  1936   2428262      Bruno Hauptman electrocuted            
+ May         6  1937   2428660      Hindenburg disaster                    
+ July       26  1956   2435681      Sinking of the Andrea Doria            
+ June        5  1976   2442935      Teton dam collapse                     
+ May        23  1968   2440000      Julian Day 2440000                     
+
+ Month,Day,Year (e.g. 1,13,1905)
+
+ MM,DD,YYYY
+ Julian Day:  2440001
+
+ MM,DD,YYYY
+ Julian Day:  2445951
+
+ MM,DD,YYYY

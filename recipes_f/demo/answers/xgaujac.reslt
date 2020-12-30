@@ -1,0 +1,30 @@
+ Enter N
+
+  #      X(I)        W(I)
+
+  1  0.707107E+00  0.157080E+01
+  2 -0.707107E+00  0.157080E+01
+
+ Check value:  0.0000000E+00  should be:  0.0000000E+00
+
+ Check value:  0.3141593E+01  should be:  0.3141593E+01
+
+ Integral from GAUJAC:    3.371451
+ Actual value:            3.371500
+ Enter N
+
+  #      X(I)        W(I)
+
+  1  0.951057E+00  0.628318E+00
+  2  0.587785E+00  0.628318E+00
+  3  0.000000E+00  0.628318E+00
+  4 -0.587785E+00  0.628318E+00
+  5 -0.951057E+00  0.628318E+00
+
+ Check value: -0.5960464E-07  should be:  0.0000000E+00
+
+ Check value:  0.3141593E+01  should be:  0.3141593E+01
+
+ Integral from GAUJAC:    3.371500
+ Actual value:            3.371500
+ Enter N

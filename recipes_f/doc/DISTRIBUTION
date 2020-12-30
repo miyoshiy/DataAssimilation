@@ -1,0 +1,22 @@
+          Can you redistribute Numerical Recipes in your programs?
+
+     If you want to include Numerical Recipes routines in programs that
+     are further distributed (either commercially or non-commercially)
+     you can obtain permission to do so from Numerical Recipes Software.
+     If the routines are bound into your program executable and are not
+     separately visible to or useable by your users, there is generally
+     no charge, provided that (i) advance permission is obtained, and
+     (ii) a copyright notice like that in this distribution is embedded
+     in your program executable.  Contact Numerical Recipes Software at
+     P.O. Box 243, Cambridge, MA 02238 (USA) [fax 617-863-1739] for
+     details.  In distributing a program containing Numerical Recipes
+     routines, you acknowledge acceptance of the DISCLAIMER OF WARRANTY
+     below, and of the fact that no business relationship is created
+     between your program's users and Numerical Recipes Software, the
+     authors of the Numerical Recipes books, or Cambridge University Press.
+
+     If you want to distribute software that has Numerical Recipes in the
+     form of source code or individually callable object modules, then you
+     must contact Numerical Recipes Software for further information.  A
+     fee (per Recipe) is charged, and we normally limit the total number
+     of Recipes distributed to 20.

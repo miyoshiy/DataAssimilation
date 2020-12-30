@@ -1,0 +1,137 @@
+                     Numerical Recipes - BSD UNIX
+
+FILES:
+
+	This the main directory of a distribution of Numerical Recipes
+software. You may have distributions for C recipes, Fortran recipes, or
+both, depending on what you have purchased. Each directory for a language
+contains some subdirectories which hold various files. The list is:
+
+recipes_{f or c-ansi or c-kr}
+	Main directory containing recipe files for a particular language.
+	recipes_f is for Fortran
+	recipes_c-ansi is for ANSI C
+	recipes_c-kr is for KR C
+recipes_{f or c-ansi or c-kr}/bin
+	Empty directory, eventually may contain some program binaries.
+recipes_{f or c-ansi or c-kr}/doc
+	Numerical Recipes documentation.
+recipes_{f or c-ansi or c-kr}/misc
+	Miscellaneous additions for special cases or environments.
+recipes_{f or c-ansi or c-kr}/recipes
+	Source for all the subroutines in "Numerical Recipes" for that
+	language, as well as a slave makefile to create a library of recipes.
+recipes_{c-ansi or c-kr}/include
+	Include files
+recipes_{f or c-ansi or c-kr}/demo
+	Subdirectory containing demonstration files for a particular language.
+recipes_{f or c-ansi or c-kr}/demo/answers
+	The "correct" results for comparison with the test output.
+recipes_{f or c-ansi or c-kr}/demo/bin
+	An empty directory, where the compiled demos can be stored.
+recipes_{f or c-ansi or c-kr}/demo/data
+	Data files required to run some of the examples.
+recipes_{f or c-ansi or c-kr}/demo/responses
+	The responses to run the examples non-interactively.
+recipes_{f or c-ansi or c-kr}/demo/results 
+	Contains makefile for running all the demos and will store the
+	output of the tests.
+recipes_{f or c-ansi or c-kr}/demo/src
+	Source for all the example programs given in the "Example Book"
+	for that language.
+
+INSTALLATION:
+
+	The installation procedure is essentially the same for all
+cases. All but the first two steps are optional.
+
+Overview: 
+	In the ideal case, the entire process is controlled exclusively
+from a top-level makefile in one of the distributions. If you have more
+than one distribution, you need only work from the top makefile for one
+of them. A common environment is defined in it, and then passed to
+subsidiary makefiles. If there are no system-specific problems, this
+should be the only makefile that requires editing. It automatically
+determines which distributions (Fortran or C) are present, and then
+attempts to execute subsidiary make's for all of them (this can be
+changed just by editing the targets in the primary makefile). There are
+three secondary makefiles that may be called - one to compile recipe
+files and put them into a library (and install it), possibly one to
+create binaries of the demonstration programs (though these take up much
+disk space), and one to generate results from running these programs. If
+problems occur, some of these makefiles may require editing.
+	NOTE THE COMMENT IN THE RECIPES MAKEFILE REGARDING SPECIAL CASES
+FOR RECIPES AFFECTED BY COMPILING OR OPTIMIZING BUGS.
+
+Walk-through:
+	In detail, the installation steps are:
+
+1) Edit the main makefile, in this directory (top level). Set the various
+parameters to be appropriate to your system. You may want to review your
+compiler's manual, and the document COMPILING, for use information.
+
+2) Type make. By default, this will create the library file(s) and
+install them in the directory specified as LIBDIR in the master makefile.
+There should be several megabytes of space free for each distribution, to
+hold all the .o (object) and .a (library) files that will be created.
+This process may take some time (order-of-magnitude an hour), so you may
+wish to run it in the background and capture the results in a file:
+
+Users of sh:   make > make.log 2>&1 &
+Users of csh:  make >& make.log &
+
+On most systems, you can check the progress of the make by running
+tail -f make.log
+
+This step also creates the programs badluk, fredex, sfroid, sphfpt and sphoot.
+
+You may need to become "root" or assume super-user privileges to write
+to the directory where the library is to be placed. The installation
+step can be done independently, as  make install  .
+
+3) The command  make clean  will remove all the residue .o files and the
+uninstalled .a files. It may be a good idea to delay this until after testing.
+
+4) Demo program binaries can be created by  make demobins  . You may not
+want to create these files, as they take up a great deal of disk space.
+
+5) Typing  make results  will run the demos and place the output in the
+results directory mentioned earlier. If the demo binaries have been
+created in the step above, they will be used. If not, the binaries will
+be compiled as needed, then deleted if they are run successfully. This
+scheme is intended to save disk space. Binaries which fail to run
+properly will not be deleted. Note that there are some assumptions about
+the relative positions of various directories built into this process.
+
+Users of sh:   make results > test.log 2>&1 &
+Users of csh:  make results >& test.log &
+
+	Many of the demos are interactive, but the test process uses a
+file of responses, contained in the responses subdirectory. In some
+cases, a demo program may become blocked because it requires input but
+none is provided from the response file. This happens when an unexpected
+execution path is taken, usually due to a difference in machine
+precision. Try compiling the demo program and running it in the
+foreground with no I/O redirections. You may have to check over the
+source for the demo program and for the routine it demonstrates in order
+to find the cause.
+
+	Note that when compiling, error information on the process itself
+is saved in the log file which collects the output of the "make". This
+information ordinarily does NOT go into the "results" files. Often the
+messages are just benign warning or suggestions from the compiler, but
+it's worth going through the output to check for a serious or
+significant problem.
+
+6) Check the results. See if there are any error messages in test.log.
+If not, go ahead and compare the results now in the directory called
+results, to the correct results provided in the directory called
+answers. It may be possible to just run diff(1) on the two directories:
+
+        diff [-s]  results answers > diff.log
+
+	However, your Fortran may format some answers differently than
+ours, such as 0.0 verses 0.0000. This, plus differences due to rounding,
+may cause the results from diff(1) to be less helpful. If you have the
+PERL language on your system, you may find the "nrdiff.pl"
+approximate-comparison program (in the results subdirectory) useful.
